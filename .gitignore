@@ -1,0 +1,29 @@
+# OS & editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# VS Code settings (keep workspace settings if you want, remove if not)
+.vscode/
+
+# Windows image cache
+ehthumbs.db
+ehthumbs_vista.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OneDrive sync files
+*.onedrive
+
+# Audio source/project files (keep only final MP3s in the repo)
+*.wav
+*.aiff
+*.aup
+*.aup3
+*.flp
+*.ptx
