@@ -12,490 +12,473 @@
     <span class="hub-logo">&#128138;</span>
     <div class="hub-title-block">
       <span class="hub-title">Drug Pronunciation Guide</span>
-      <span class="hub-sub">Medical School Pharmacology</span>
+      <span class="hub-sub">USMLE Step 1 Pharmacology</span>
     </div>
   </header>
 
   <div class="hub-body">
 
-    <!-- â”€â”€ LEFT: System Selector â”€â”€ -->
+    <!--  LEFT: System Selector  -->
     <nav class="sys-nav" id="sysNav">
       <div class="sys-nav-label">Systems</div>
-
-      <button class="sys-nav-item active" data-system="neuro" style="--sn-color:#6c3483;">
-        <span class="sn-icon">&#129504;</span>
-        <span class="sn-name">Neuro &amp; Psych</span>
-        <span class="sn-count">7</span>
-      </button>
-      <button class="sys-nav-item" data-system="anesthesia" style="--sn-color:#4a90a4;">
-        <span class="sn-icon">&#128137;</span>
-        <span class="sn-name">Anesthesiology</span>
-        <span class="sn-count">3</span>
-      </button>
-      <button class="sys-nav-item" data-system="cardio" style="--sn-color:#c0392b;">
-        <span class="sn-icon">&#10084;&#65039;</span>
-        <span class="sn-name">Cardiology</span>
-        <span class="sn-count">7</span>
-      </button>
-      <button class="sys-nav-item" data-system="id" style="--sn-color:#1e8449;">
-        <span class="sn-icon">&#129440;</span>
-        <span class="sn-name">Infect. Disease</span>
-        <span class="sn-count">5</span>
-      </button>
-      <button class="sys-nav-item" data-system="renal" style="--sn-color:#2980b9;">
-        <span class="sn-icon">&#128167;</span>
-        <span class="sn-name">Renal</span>
-        <span class="sn-count">1</span>
-      </button>
-      <button class="sys-nav-item" data-system="resp" style="--sn-color:#148f77;">
-        <span class="sn-icon">&#129752;</span>
-        <span class="sn-name">Respiratory</span>
-        <span class="sn-count">3</span>
-      </button>
-      <button class="sys-nav-item" data-system="gi" style="--sn-color:#ca6f1e;">
-        <span class="sn-icon">&#127757;</span>
-        <span class="sn-name">Gastrointestinal</span>
-        <span class="sn-count">4</span>
-      </button>
-      <button class="sys-nav-item" data-system="endo" style="--sn-color:#d4ac0d;">
-        <span class="sn-icon">&#129514;</span>
-        <span class="sn-name">Endocrine</span>
-        <span class="sn-count">4</span>
-      </button>
-      <button class="sys-nav-item" data-system="msk" style="--sn-color:#a04000;">
-        <span class="sn-icon">&#129460;</span>
-        <span class="sn-name">MSK &amp; Pain</span>
-        <span class="sn-count">4</span>
-      </button>
-      <button class="sys-nav-item" data-system="onco" style="--sn-color:#7d3c98;">
-        <span class="sn-icon">&#128300;</span>
-        <span class="sn-name">Oncology &amp; Hem.</span>
-        <span class="sn-count">3</span>
-      </button>
-      <button class="sys-nav-item" data-system="ophtho" style="--sn-color:#16a085;">
-        <span class="sn-icon">&#128065;</span>
-        <span class="sn-name">Ophthalmology</span>
-        <span class="sn-count">1</span>
-      </button>
+      <button class="sys-nav-item active" data-system="cardio"   style="--sn-color:#c0392b;"><span class="sn-icon">&#10084;&#65039;</span><span class="sn-name">Cardiovascular</span><span class="sn-count">8</span></button>
+      <button class="sys-nav-item"        data-system="neuro"    style="--sn-color:#6c3483;"><span class="sn-icon">&#129504;</span><span class="sn-name">Neurology &amp; Psych</span><span class="sn-count">13</span></button>
+      <button class="sys-nav-item"        data-system="resp"     style="--sn-color:#148f77;"><span class="sn-icon">&#129752;</span><span class="sn-name">Respiratory</span><span class="sn-count">6</span></button>
+      <button class="sys-nav-item"        data-system="gi"       style="--sn-color:#ca6f1e;"><span class="sn-icon">&#127757;</span><span class="sn-name">Gastrointestinal</span><span class="sn-count">5</span></button>
+      <button class="sys-nav-item"        data-system="renal"    style="--sn-color:#2980b9;"><span class="sn-icon">&#128167;</span><span class="sn-name">Renal</span><span class="sn-count">1</span></button>
+      <button class="sys-nav-item"        data-system="endo"     style="--sn-color:#d4ac0d;"><span class="sn-icon">&#129514;</span><span class="sn-name">Endocrine</span><span class="sn-count">4</span></button>
+      <button class="sys-nav-item"        data-system="repro"    style="--sn-color:#c2185b;"><span class="sn-icon">&#127800;</span><span class="sn-name">Reproductive</span><span class="sn-count">6</span></button>
+      <button class="sys-nav-item"        data-system="msk"      style="--sn-color:#795548;"><span class="sn-icon">&#129460;</span><span class="sn-name">MSK &amp; Connective</span><span class="sn-count">5</span></button>
+      <button class="sys-nav-item"        data-system="id"       style="--sn-color:#1e8449;"><span class="sn-icon">&#129440;</span><span class="sn-name">Infectious Disease</span><span class="sn-count">6</span></button>
+      <button class="sys-nav-item"        data-system="onco"     style="--sn-color:#7d3c98;"><span class="sn-icon">&#128300;</span><span class="sn-name">Oncology &amp; Immuno</span><span class="sn-count">4</span></button>
+      <button class="sys-nav-item"        data-system="ophtho"   style="--sn-color:#16a085;"><span class="sn-icon">&#128065;</span><span class="sn-name">Ophthalmology</span><span class="sn-count">1</span></button>
+      <button class="sys-nav-item"        data-system="tox"      style="--sn-color:#e74c3c;"><span class="sn-icon">&#9888;&#65039;</span><span class="sn-name">Toxicology</span><span class="sn-count">1</span></button>
     </nav>
 
-    <!-- â”€â”€ RIGHT: Drug Class Panels â”€â”€ -->
+    <!--  RIGHT: Drug Class Panels  -->
     <main class="hub-main">
 
-      <!-- NEUROLOGY & PSYCHIATRY -->
-      <section class="sys-panel active" id="panel-neuro">
-        <div class="panel-header" style="--ph-color:#6c3483;">
-          <span class="ph-icon">&#129504;</span>
-          <div>
-            <div class="ph-name">Neurology &amp; Psychiatry</div>
-            <div class="ph-desc">CNS, mood, cognition, and movement</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/antipsychotics.html" style="--class-color:#1a6b8a;">
-            <div class="class-icon">&#129504;</div>
-            <div class="class-name">Antipsychotics</div>
-            <div class="class-desc">Psychosis, schizophrenia &amp; related disorders.</div>
-            <span class="badge">18 drugs</span>
-          </a>
-          <a class="class-card" href="pages/antidepressants.html" style="--class-color:#e67e22;">
-            <div class="class-icon">&#127774;</div>
-            <div class="class-name">Antidepressants &amp; Mood Stabilizers</div>
-            <div class="class-desc">Depression, bipolar &amp; mood regulation.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/anticonvulsants.html" style="--class-color:#8e44ad;">
-            <div class="class-icon">&#9889;</div>
-            <div class="class-name">Anticonvulsants</div>
-            <div class="class-desc">Seizure prevention &amp; epilepsy management.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/antiparkinson.html" style="--class-color:#27ae60;">
-            <div class="class-icon">&#129504;</div>
-            <div class="class-name">Antiparkinson Drugs</div>
-            <div class="class-desc">Parkinson&rsquo;s disease symptom management.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/sedative-hypnotics.html" style="--class-color:#2c3e50;">
-            <div class="class-icon">&#128564;</div>
-            <div class="class-name">Sedative-Hypnotics</div>
-            <div class="class-desc">CNS depressants for sedation &amp; sleep.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/anxiolytics.html" style="--class-color:#7d3c98;">
-            <div class="class-icon">&#128524;</div>
-            <div class="class-name">Anxiolytics</div>
-            <div class="class-desc">Anxiety disorders &amp; acute anxiety.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/stimulants-adhd.html" style="--class-color:#1e8bc3;">
-            <div class="class-icon">&#9889;</div>
-            <div class="class-name">Stimulants &amp; ADHD Drugs</div>
-            <div class="class-desc">ADHD, narcolepsy &amp; CNS stimulation.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- ANESTHESIOLOGY -->
-      <section class="sys-panel" id="panel-anesthesia">
-        <div class="panel-header" style="--ph-color:#4a90a4;">
-          <span class="ph-icon">&#128137;</span>
-          <div>
-            <div class="ph-name">Anesthesiology</div>
-            <div class="ph-desc">Anesthesia, analgesia &amp; procedural sedation</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/anesthetics.html" style="--class-color:#4a90a4;">
-            <div class="class-icon">&#128137;</div>
-            <div class="class-name">General Anesthetics</div>
-            <div class="class-desc">Induction &amp; maintenance of general anesthesia.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/local-anesthetics.html" style="--class-color:#1a7fa8;">
-            <div class="class-icon">&#129657;</div>
-            <div class="class-name">Local Anesthetics</div>
-            <div class="class-desc">Regional nerve conduction blockade.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/muscle-relaxants.html" style="--class-color:#d35400;">
-            <div class="class-icon">&#128170;</div>
-            <div class="class-name">Neuromuscular Blockers</div>
-            <div class="class-desc">NMJ blockade for muscle relaxation.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- CARDIOLOGY -->
-      <section class="sys-panel" id="panel-cardio">
+      <!--
+           CARDIOVASCULAR
+       -->
+      <section class="sys-panel active" id="panel-cardio">
         <div class="panel-header" style="--ph-color:#c0392b;">
           <span class="ph-icon">&#10084;&#65039;</span>
-          <div>
-            <div class="ph-name">Cardiology</div>
-            <div class="ph-desc">Heart, vasculature, blood pressure &amp; coagulation</div>
-          </div>
+          <div><div class="ph-name">Cardiovascular</div><div class="ph-desc">Heart rhythm, blood pressure, coronary disease, lipids &amp; coagulation</div></div>
         </div>
         <div class="class-grid">
-
           <a class="class-card" href="pages/antiarrhythmics.html" style="--class-color:#c0392b;">
-            <div class="class-icon">&#10084;&#65039;</div>
-            <div class="class-name">Antiarrhythmics</div>
-            <div class="class-desc">Irregular rhythms &amp; conduction disorders.</div>
+            <div class="class-icon">&#10084;&#65039;</div><div class="class-name">Antiarrhythmics</div>
+            <div class="class-desc">Classes IIV + adenosine &amp; digoxin. Rate &amp; rhythm control.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/antihypertensives.html" style="--class-color:#e74c3c;">
-            <div class="class-icon">&#128200;</div>
-            <div class="class-name">Antihypertensives</div>
-            <div class="class-desc">ACE inhibitors, ARBs, beta blockers, CCBs.</div>
+            <div class="class-icon">&#128200;</div><div class="class-name">Antihypertensives</div>
+            <div class="class-desc">ACE-I, ARBs, CCBs, beta blockers, alpha blockers, direct vasodilators.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/antianginals.html" style="--class-color:#a93226;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Antianginals</div>
-            <div class="class-desc">Angina relief &amp; myocardial Oâ‚‚ demand.</div>
+            <div class="class-icon">&#128138;</div><div class="class-name">Antianginals &amp; Nitrates</div>
+            <div class="class-desc">Nitrates, beta blockers, CCBs, ranolazine for angina &amp; ischemia.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/heart-failure.html" style="--class-color:#922b21;">
-            <div class="class-icon">&#129728;</div>
-            <div class="class-name">Heart Failure Drugs</div>
-            <div class="class-desc">Systolic &amp; diastolic heart failure.</div>
+            <div class="class-icon">&#129728;</div><div class="class-name">Heart Failure Drugs</div>
+            <div class="class-desc">ACE-I/ARBs, beta blockers, diuretics, digoxin, sacubitril/valsartan.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/antilipidemic.html" style="--class-color:#cb4335;">
-            <div class="class-icon">&#128137;</div>
-            <div class="class-name">Antilipidemic Agents</div>
-            <div class="class-desc">Statins &amp; cholesterol/triglyceride lowering.</div>
+            <div class="class-icon">&#128137;</div><div class="class-name">Antilipidemic Agents</div>
+            <div class="class-desc">Statins, fibrates, niacin, bile acid resins, ezetimibe, PCSK9 inhibitors.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/anticoagulants.html" style="--class-color:#b03a2e;">
-            <div class="class-icon">&#129656;</div>
-            <div class="class-name">Anticoagulants &amp; Antiplatelets</div>
-            <div class="class-desc">Clot prevention &amp; platelet aggregation.</div>
+            <div class="class-icon">&#129656;</div><div class="class-name">Anticoagulants</div>
+            <div class="class-desc">Heparin, LMWHs, warfarin, direct Xa inhibitors, direct thrombin inhibitors.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antiplatelets.html" style="--class-color:#b03a2e;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Antiplatelets</div>
+            <div class="class-desc">Aspirin, clopidogrel, ticagrelor, prasugrel, GP IIb/IIIa inhibitors.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/thrombolytics.html" style="--class-color:#d98880;">
-            <div class="class-icon">&#128137;</div>
-            <div class="class-name">Thrombolytics</div>
-            <div class="class-desc">Clot dissolution in stroke, MI &amp; PE.</div>
+            <div class="class-icon">&#128137;</div><div class="class-name">Thrombolytics</div>
+            <div class="class-desc">tPA, streptokinase. Clot dissolution in stroke, STEMI &amp; PE.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-
         </div>
       </section>
 
-      <!-- INFECTIOUS DISEASE -->
-      <section class="sys-panel" id="panel-id">
-        <div class="panel-header" style="--ph-color:#1e8449;">
-          <span class="ph-icon">&#129440;</span>
-          <div>
-            <div class="ph-name">Infectious Disease</div>
-            <div class="ph-desc">Antibacterial, antiviral, antifungal &amp; antiparasitic agents</div>
-          </div>
+      <!--
+           NEUROLOGY & PSYCHIATRY
+       -->
+      <section class="sys-panel" id="panel-neuro">
+        <div class="panel-header" style="--ph-color:#6c3483;">
+          <span class="ph-icon">&#129504;</span>
+          <div><div class="ph-name">Neurology &amp; Psychiatry</div><div class="ph-desc">CNS drugs: anesthesia, movement, mood, psychosis, cognition, pain &amp; addiction</div></div>
         </div>
         <div class="class-grid">
-
-          <a class="class-card" href="pages/antibiotics.html" style="--class-color:#1e8449;">
-            <div class="class-icon">&#129440;</div>
-            <div class="class-name">Antibiotics</div>
-            <div class="class-desc">Penicillins, cephalosporins, macrolides &amp; more.</div>
+          <a class="class-card" href="pages/anesthesia.html" style="--class-color:#2c6e8a;">
+            <div class="class-icon">&#128137;</div><div class="class-name">Anesthetics</div>
+            <div class="class-desc">General (inhaled &amp; IV), local anesthetics &amp; neuromuscular blocking agents.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/antivirals.html" style="--class-color:#239b56;">
-            <div class="class-icon">&#129440;</div>
-            <div class="class-name">Antivirals</div>
-            <div class="class-desc">HIV, herpes, influenza &amp; other viral infections.</div>
+          <a class="class-card" href="pages/anticonvulsants.html" style="--class-color:#8e44ad;">
+            <div class="class-icon">&#9889;</div><div class="class-name">Antiepileptics</div>
+            <div class="class-desc">Phenytoin, valproate, carbamazepine, lamotrigine, levetiracetam, benzodiazepines.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/antifungals.html" style="--class-color:#27ae60;">
-            <div class="class-icon">&#127812;</div>
-            <div class="class-name">Antifungals</div>
-            <div class="class-desc">Systemic &amp; topical fungal infections.</div>
+          <a class="class-card" href="pages/antiparkinson.html" style="--class-color:#27ae60;">
+            <div class="class-icon">&#129504;</div><div class="class-name">Parkinson&rsquo;s Drugs</div>
+            <div class="class-desc">Levodopa/carbidopa, dopamine agonists, MAO-B inhibitors, anticholinergics, amantadine.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/antiparasitics.html" style="--class-color:#1a7a40;">
-            <div class="class-icon">&#129440;</div>
-            <div class="class-name">Antiparasitics</div>
-            <div class="class-desc">Protozoa, helminths &amp; other parasites.</div>
+          <a class="class-card" href="pages/alzheimers.html" style="--class-color:#8e44ad;">
+            <div class="class-icon">&#129504;</div><div class="class-name">Alzheimer&rsquo;s &amp; Dementia Drugs</div>
+            <div class="class-desc">AChE inhibitors (donepezil, rivastigmine, galantamine) &amp; memantine.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/antimycobacterials.html" style="--class-color:#196f3d;">
-            <div class="class-icon">&#129440;</div>
-            <div class="class-name">Antimycobacterials</div>
-            <div class="class-desc">Tuberculosis &amp; mycobacterial infections.</div>
+          <a class="class-card" href="pages/migraine-drugs.html" style="--class-color:#6c3483;">
+            <div class="class-icon">&#128167;</div><div class="class-name">Migraine Drugs</div>
+            <div class="class-desc">Triptans (5-HT1B/D agonists), ergotamines, CGRP antagonists, prophylaxis agents.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-
-        </div>
-      </section>
-
-      <!-- RENAL -->
-      <section class="sys-panel" id="panel-renal">
-        <div class="panel-header" style="--ph-color:#2980b9;">
-          <span class="ph-icon">&#128167;</span>
-          <div>
-            <div class="ph-name">Renal</div>
-            <div class="ph-desc">Kidney function &amp; fluid/electrolyte balance</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/diuretics.html" style="--class-color:#2980b9;">
-            <div class="class-icon">&#128167;</div>
-            <div class="class-name">Diuretics</div>
-            <div class="class-desc">Loop, thiazide &amp; Kâº-sparing diuretics.</div>
+          <a class="class-card" href="pages/antidepressants.html" style="--class-color:#e67e22;">
+            <div class="class-icon">&#127774;</div><div class="class-name">Antidepressants</div>
+            <div class="class-desc">SSRIs, SNRIs, TCAs, MAOIs, bupropion, mirtazapine, trazodone.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-
-        </div>
-      </section>
-
-      <!-- RESPIRATORY -->
-      <section class="sys-panel" id="panel-resp">
-        <div class="panel-header" style="--ph-color:#148f77;">
-          <span class="ph-icon">&#129752;</span>
-          <div>
-            <div class="ph-name">Respiratory</div>
-            <div class="ph-desc">Asthma, COPD, allergies &amp; pulmonary conditions</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/bronchodilators.html" style="--class-color:#148f77;">
-            <div class="class-icon">&#129752;</div>
-            <div class="class-name">Bronchodilators</div>
-            <div class="class-desc">Beta-2 agonists, anticholinergics &amp; xanthines.</div>
+          <a class="class-card" href="pages/mood-stabilizers.html" style="--class-color:#2980b9;">
+            <div class="class-icon">&#9878;&#65039;</div><div class="class-name">Mood Stabilizers</div>
+            <div class="class-desc">Lithium, valproate, carbamazepine, lamotrigine for bipolar disorder.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/respiratory-steroids.html" style="--class-color:#1a9e8b;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Respiratory Corticosteroids</div>
-            <div class="class-desc">Inhaled &amp; systemic airway steroids.</div>
+          <a class="class-card" href="pages/antipsychotics.html" style="--class-color:#1a6b8a;">
+            <div class="class-icon">&#129504;</div><div class="class-name">Antipsychotics</div>
+            <div class="class-desc">Typical (D&#8322; blockers) &amp; atypical agents. Schizophrenia &amp; mania.</div>
+            <span class="badge">18 drugs</span>
+          </a>
+          <a class="class-card" href="pages/anxiolytics.html" style="--class-color:#7d3c98;">
+            <div class="class-icon">&#128524;</div><div class="class-name">Anxiolytics</div>
+            <div class="class-desc">Benzodiazepines, buspirone, hydroxyzine. Anxiety &amp; panic disorders.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/antihistamines.html" style="--class-color:#17a589;">
-            <div class="class-icon">&#129750;</div>
-            <div class="class-name">Antihistamines &amp; Allergy Drugs</div>
-            <div class="class-desc">H1 blockers, allergic rhinitis &amp; urticaria.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- GASTROINTESTINAL -->
-      <section class="sys-panel" id="panel-gi">
-        <div class="panel-header" style="--ph-color:#ca6f1e;">
-          <span class="ph-icon">&#127757;</span>
-          <div>
-            <div class="ph-name">Gastrointestinal</div>
-            <div class="ph-desc">GI tract, liver &amp; biliary system</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/acid-drugs.html" style="--class-color:#e67e22;">
-            <div class="class-icon">&#128293;</div>
-            <div class="class-name">Acid-Related Drugs</div>
-            <div class="class-desc">PPIs, H2 blockers, antacids, H. pylori.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/antiemetics.html" style="--class-color:#d35400;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Antiemetics</div>
-            <div class="class-desc">Nausea &amp; vomiting prevention and treatment.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/bowel-agents.html" style="--class-color:#ca6f1e;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Bowel Agents</div>
-            <div class="class-desc">Laxatives, antidiarrheals &amp; IBD drugs.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/hepatic-drugs.html" style="--class-color:#ba4a00;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Hepatic &amp; Biliary Drugs</div>
-            <div class="class-desc">Liver disease, hepatitis &amp; biliary disorders.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- ENDOCRINE -->
-      <section class="sys-panel" id="panel-endo">
-        <div class="panel-header" style="--ph-color:#d4ac0d;">
-          <span class="ph-icon">&#129514;</span>
-          <div>
-            <div class="ph-name">Endocrine</div>
-            <div class="ph-desc">Hormones, metabolic drugs &amp; endocrine glands</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/diabetes-drugs.html" style="--class-color:#d4ac0d;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Diabetes Drugs</div>
-            <div class="class-desc">Insulin, metformin, GLP-1s &amp; antidiabetics.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/thyroid-drugs.html" style="--class-color:#d68910;">
-            <div class="class-icon">&#129418;</div>
-            <div class="class-name">Thyroid Drugs</div>
-            <div class="class-desc">Hypothyroidism &amp; hyperthyroidism agents.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/corticosteroids.html" style="--class-color:#dc7633;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Corticosteroids</div>
-            <div class="class-desc">Systemic glucocorticoids &amp; mineralocorticoids.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-          <a class="class-card" href="pages/reproductive-hormones.html" style="--class-color:#e59866;">
-            <div class="class-icon">&#127800;</div>
-            <div class="class-name">Reproductive Hormones &amp; Contraceptives</div>
-            <div class="class-desc">Estrogens, progestins &amp; hormonal contraceptives.</div>
-            <span class="badge coming-soon">Coming soon</span>
-          </a>
-
-        </div>
-      </section>
-
-      <!-- MUSCULOSKELETAL & PAIN -->
-      <section class="sys-panel" id="panel-msk">
-        <div class="panel-header" style="--ph-color:#a04000;">
-          <span class="ph-icon">&#129460;</span>
-          <div>
-            <div class="ph-name">Musculoskeletal &amp; Pain</div>
-            <div class="ph-desc">Analgesics, anti-inflammatories &amp; rheumatologic agents</div>
-          </div>
-        </div>
-        <div class="class-grid">
-
-          <a class="class-card" href="pages/nsaids-analgesics.html" style="--class-color:#a04000;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">NSAIDs &amp; Analgesics</div>
-            <div class="class-desc">Non-opioid pain relief &amp; anti-inflammatory.</div>
+          <a class="class-card" href="pages/sedative-hypnotics.html" style="--class-color:#2c3e50;">
+            <div class="class-icon">&#128564;</div><div class="class-name">Sedative-Hypnotics</div>
+            <div class="class-desc">Non-BZD hypnotics (zolpidem), melatonin agonists, barbiturates.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/opioids.html" style="--class-color:#922b21;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Opioids</div>
-            <div class="class-desc">Narcotic analgesics for moderate-severe pain.</div>
+            <div class="class-icon">&#128138;</div><div class="class-name">Opioid Analgesics</div>
+            <div class="class-desc">Full agonists, partial agonists (buprenorphine), naloxone/naltrexone antagonists.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/stimulants-adhd.html" style="--class-color:#1e8bc3;">
+            <div class="class-icon">&#9889;</div><div class="class-name">ADHD &amp; Stimulants</div>
+            <div class="class-desc">Amphetamines, methylphenidate, atomoxetine, guanfacine. ADHD &amp; narcolepsy.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/drug-dependence.html" style="--class-color:#7f8c8d;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Drug Dependence &amp; Withdrawal</div>
+            <div class="class-desc">Pharmacology of addiction, tolerance, withdrawal syndromes &amp; treatment agents.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           RESPIRATORY
+       -->
+      <section class="sys-panel" id="panel-resp">
+        <div class="panel-header" style="--ph-color:#148f77;">
+          <span class="ph-icon">&#129752;</span>
+          <div><div class="ph-name">Respiratory</div><div class="ph-desc">Asthma, COPD, allergies, pulmonary hypertension &amp; airway pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/bronchodilators.html" style="--class-color:#148f77;">
+            <div class="class-icon">&#129752;</div><div class="class-name">Bronchodilators</div>
+            <div class="class-desc">SABA/LABA (beta-2 agonists), SAMA/LAMA (anticholinergics), methylxanthines.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/leukotriene-modifiers.html" style="--class-color:#148f77;">
+            <div class="class-icon">&#129752;</div><div class="class-name">Leukotriene Modifiers</div>
+            <div class="class-desc">Montelukast, zafirlukast (receptor blockers); zileuton (5-LOX inhibitor).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/respiratory-steroids.html" style="--class-color:#1a9e8b;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Inhaled Corticosteroids</div>
+            <div class="class-desc">Fluticasone, budesonide, beclomethasone. First-line controller therapy.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antihistamines.html" style="--class-color:#17a589;">
+            <div class="class-icon">&#129750;</div><div class="class-name">Antihistamines &amp; Allergy</div>
+            <div class="class-desc">1st-gen (diphenhydramine) &amp; 2nd-gen (loratadine, cetirizine) H1 blockers.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/pulm-hypertension.html" style="--class-color:#2471a3;">
+            <div class="class-icon">&#129728;</div><div class="class-name">Pulmonary Hypertension Drugs</div>
+            <div class="class-desc">PDE5 inhibitors (sildenafil), endothelin antagonists (bosentan), prostacyclins.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antitussives.html" style="--class-color:#117a65;">
+            <div class="class-icon">&#129752;</div><div class="class-name">Antitussives &amp; Decongestants</div>
+            <div class="class-desc">Dextromethorphan, codeine, guaifenesin, pseudoephedrine, intranasal agents.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           GASTROINTESTINAL
+       -->
+      <section class="sys-panel" id="panel-gi">
+        <div class="panel-header" style="--ph-color:#ca6f1e;">
+          <span class="ph-icon">&#127757;</span>
+          <div><div class="ph-name">Gastrointestinal</div><div class="ph-desc">Acid, motility, nausea, bowel disease, liver &amp; biliary pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/acid-drugs.html" style="--class-color:#e67e22;">
+            <div class="class-icon">&#128293;</div><div class="class-name">Acid-Related Drugs</div>
+            <div class="class-desc">PPIs, H2 blockers, antacids, sucralfate &amp; H. pylori triple/quadruple therapy.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/prokinetics.html" style="--class-color:#d35400;">
+            <div class="class-icon">&#127757;</div><div class="class-name">Prokinetics</div>
+            <div class="class-desc">Metoclopramide, erythromycin. Treat gastroparesis &amp; GI dysmotility.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antiemetics.html" style="--class-color:#d35400;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Antiemetics</div>
+            <div class="class-desc">5-HT3 blockers, D2 blockers, NK1 antagonists, scopolamine, dronabinol.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/bowel-agents.html" style="--class-color:#ca6f1e;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Laxatives, Antidiarrheals &amp; IBD</div>
+            <div class="class-desc">Laxative classes, loperamide, aminosalicylates, immunomodulators &amp; biologics for IBD.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/hepatic-drugs.html" style="--class-color:#ba4a00;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Hepatic &amp; Biliary Drugs</div>
+            <div class="class-desc">Lactulose, rifaximin, ursodiol, N-acetylcysteine, hepatitis antivirals.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           RENAL
+       -->
+      <section class="sys-panel" id="panel-renal">
+        <div class="panel-header" style="--ph-color:#2980b9;">
+          <span class="ph-icon">&#128167;</span>
+          <div><div class="ph-name">Renal</div><div class="ph-desc">Nephron-segment diuretics &amp; kidney pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/diuretics.html" style="--class-color:#2980b9;">
+            <div class="class-icon">&#128167;</div><div class="class-name">Diuretics</div>
+            <div class="class-desc">Carbonic anhydrase inhibitors, loop, thiazide, K&#8314;-sparing &amp; osmotic diuretics.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           ENDOCRINE
+       -->
+      <section class="sys-panel" id="panel-endo">
+        <div class="panel-header" style="--ph-color:#d4ac0d;">
+          <span class="ph-icon">&#129514;</span>
+          <div><div class="ph-name">Endocrine</div><div class="ph-desc">Pancreatic, thyroid, adrenal &amp; hypothalamic-pituitary pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/diabetes-drugs.html" style="--class-color:#d4ac0d;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Diabetes Drugs</div>
+            <div class="class-desc">Insulin, metformin, sulfonylureas, GLP-1 agonists, DPP-4 inhibitors, SGLT-2 inhibitors.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/thyroid-drugs.html" style="--class-color:#d68910;">
+            <div class="class-icon">&#129418;</div><div class="class-name">Thyroid Drugs</div>
+            <div class="class-desc">Levothyroxine (hypothyroid); PTU, methimazole, iodide, beta blockers (hyperthyroid).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/corticosteroids.html" style="--class-color:#dc7633;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Corticosteroids</div>
+            <div class="class-desc">Systemic glucocorticoids (prednisone, dexamethasone) &amp; mineralocorticoids (fludrocortisone).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/hypothalamic-pituitary.html" style="--class-color:#d4ac0d;">
+            <div class="class-icon">&#129514;</div><div class="class-name">Hypothalamic &amp; Pituitary Drugs</div>
+            <div class="class-desc">GnRH agonists/antagonists, growth hormone, octreotide, ADH drugs, oxytocin.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           REPRODUCTIVE
+       -->
+      <section class="sys-panel" id="panel-repro">
+        <div class="panel-header" style="--ph-color:#c2185b;">
+          <span class="ph-icon">&#127800;</span>
+          <div><div class="ph-name">Reproductive</div><div class="ph-desc">Contraception, fertility, sex hormones, pregnancy &amp; androgen pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/reproductive-hormones.html" style="--class-color:#e91e8c;">
+            <div class="class-icon">&#127800;</div><div class="class-name">Hormonal Contraceptives &amp; HRT</div>
+            <div class="class-desc">Estrogens, progestins, combined OCP, progestin-only, emergency contraception &amp; HRT.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/fertility-drugs.html" style="--class-color:#e91e8c;">
+            <div class="class-icon">&#127800;</div><div class="class-name">Fertility &amp; Ovulation Drugs</div>
+            <div class="class-desc">Clomiphene, FSH, LH, hCG, GnRH analogs for infertility &amp; ART.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/uterotonic.html" style="--class-color:#c2185b;">
+            <div class="class-icon">&#128167;</div><div class="class-name">Uterotonic Agents</div>
+            <div class="class-desc">Oxytocin, misoprostol, ergotamine, carboprost. Labor induction &amp; PPH.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/tocolytics.html" style="--class-color:#ad1457;">
+            <div class="class-icon">&#128167;</div><div class="class-name">Tocolytics</div>
+            <div class="class-desc">Terbutaline, nifedipine, indomethacin, magnesium sulfate. Preterm labor.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/androgens.html" style="--class-color:#7b1fa2;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Androgens &amp; Anti-Androgens</div>
+            <div class="class-desc">Testosterone, anabolic steroids; finasteride, flutamide, spironolactone.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/erectile-dysfunction.html" style="--class-color:#6a1b9a;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Erectile Dysfunction &amp; BPH</div>
+            <div class="class-desc">PDE5 inhibitors (sildenafil, tadalafil), alpha blockers, 5-alpha reductase inhibitors.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           MUSCULOSKELETAL & CONNECTIVE TISSUE
+       -->
+      <section class="sys-panel" id="panel-msk">
+        <div class="panel-header" style="--ph-color:#795548;">
+          <span class="ph-icon">&#129460;</span>
+          <div><div class="ph-name">Musculoskeletal &amp; Connective Tissue</div><div class="ph-desc">Pain, inflammation, gout, autoimmune disease &amp; bone pharmacology</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/nsaids-analgesics.html" style="--class-color:#a04000;">
+            <div class="class-icon">&#128138;</div><div class="class-name">NSAIDs &amp; Non-Opioid Analgesics</div>
+            <div class="class-desc">Non-selective COX inhibitors, COX-2 inhibitors, acetaminophen. Pain &amp; inflammation.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/gout-drugs.html" style="--class-color:#d35400;">
-            <div class="class-icon">&#129460;</div>
-            <div class="class-name">Gout Drugs</div>
-            <div class="class-desc">Acute gout &amp; urate-lowering therapy.</div>
+            <div class="class-icon">&#129460;</div><div class="class-name">Gout Drugs</div>
+            <div class="class-desc">Colchicine, indomethacin (acute); allopurinol, febuxostat, probenecid (chronic).</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
           <a class="class-card" href="pages/dmards.html" style="--class-color:#b7950b;">
-            <div class="class-icon">&#128137;</div>
-            <div class="class-name">DMARDs &amp; Biologics</div>
-            <div class="class-desc">Rheumatoid arthritis &amp; autoimmune disease.</div>
+            <div class="class-icon">&#128137;</div><div class="class-name">DMARDs &amp; Biologics (RA &amp; Autoimmune)</div>
+            <div class="class-desc">Methotrexate, hydroxychloroquine, leflunomide; TNF-&#945; inhibitors, IL-6/JAK inhibitors.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-
+          <a class="class-card" href="pages/skeletal-muscle-relaxants.html" style="--class-color:#795548;">
+            <div class="class-icon">&#128170;</div><div class="class-name">Skeletal Muscle Relaxants</div>
+            <div class="class-desc">Cyclobenzaprine, baclofen, dantrolene, tizanidine, methocarbamol, carisoprodol.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/osteoporosis.html" style="--class-color:#8d6e63;">
+            <div class="class-icon">&#129460;</div><div class="class-name">Osteoporosis Drugs</div>
+            <div class="class-desc">Bisphosphonates, denosumab, raloxifene, teriparatide, calcium &amp; vitamin D.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
         </div>
       </section>
 
-      <!-- ONCOLOGY & HEMATOLOGY -->
+      <!--
+           INFECTIOUS DISEASE
+       -->
+      <section class="sys-panel" id="panel-id">
+        <div class="panel-header" style="--ph-color:#1e8449;">
+          <span class="ph-icon">&#129440;</span>
+          <div><div class="ph-name">Infectious Disease</div><div class="ph-desc">Antibacterials by mechanism, antimycobacterials, antifungals, antivirals &amp; antiparasitics</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/antibiotics.html" style="--class-color:#1e8449;">
+            <div class="class-icon">&#129440;</div><div class="class-name">Antibiotics</div>
+            <div class="class-desc">Organized by mechanism: cell wall, protein synthesis, DNA/RNA &amp; folate inhibitors.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antimycobacterials.html" style="--class-color:#196f3d;">
+            <div class="class-icon">&#129440;</div><div class="class-name">Antimycobacterials</div>
+            <div class="class-desc">RIPE therapy (rifampin, isoniazid, pyrazinamide, ethambutol); leprosy drugs.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antifungals.html" style="--class-color:#145a32;">
+            <div class="class-icon">&#127812;</div><div class="class-name">Antifungals</div>
+            <div class="class-desc">Azoles, echinocandins, polyenes (amphotericin B), flucytosine, griseofulvin.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antivirals.html" style="--class-color:#196f3d;">
+            <div class="class-icon">&#129440;</div><div class="class-name">Antivirals (Herpes, Flu &amp; Resp)</div>
+            <div class="class-desc">Nucleoside analogs (acyclovir, ganciclovir); neuraminidase inhibitors (oseltamivir).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antiretrovirals.html" style="--class-color:#239b56;">
+            <div class="class-icon">&#129440;</div><div class="class-name">Antiretrovirals (HIV)</div>
+            <div class="class-desc">NRTIs, NNRTIs, PIs, integrase inhibitors, entry/fusion inhibitors &amp; HAART.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+          <a class="class-card" href="pages/antiparasitics.html" style="--class-color:#1e8449;">
+            <div class="class-icon">&#129440;</div><div class="class-name">Antiparasitics</div>
+            <div class="class-desc">Antiprotozoals (chloroquine, metronidazole, TMP-SMX); antihelminthics (albendazole, ivermectin).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
+        </div>
+      </section>
+
+      <!--
+           ONCOLOGY & IMMUNOLOGY
+       -->
       <section class="sys-panel" id="panel-onco">
         <div class="panel-header" style="--ph-color:#7d3c98;">
           <span class="ph-icon">&#128300;</span>
-          <div>
-            <div class="ph-name">Oncology &amp; Hematology</div>
-            <div class="ph-desc">Chemotherapy, targeted agents &amp; blood disorder drugs</div>
-          </div>
+          <div><div class="ph-name">Oncology &amp; Immunology</div><div class="ph-desc">Chemotherapy by mechanism, targeted biologics, immunotherapy &amp; immunosuppression</div></div>
         </div>
         <div class="class-grid">
-
           <a class="class-card" href="pages/chemotherapy.html" style="--class-color:#7d3c98;">
-            <div class="class-icon">&#128300;</div>
-            <div class="class-name">Chemotherapy</div>
-            <div class="class-desc">Cytotoxic agents for malignancy treatment.</div>
+            <div class="class-icon">&#128300;</div><div class="class-name">Chemotherapy</div>
+            <div class="class-desc">Organized by mechanism: alkylating agents, antimetabolites, antimicrotubule, topoisomerase &amp; antitumor antibiotics.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/targeted-therapy.html" style="--class-color:#6c3483;">
-            <div class="class-icon">&#127919;</div>
-            <div class="class-name">Targeted Therapy &amp; Biologics</div>
-            <div class="class-desc">Monoclonal antibodies &amp; kinase inhibitors.</div>
+          <a class="class-card" href="pages/targeted-therapy.html" style="--class-color:#9b59b6;">
+            <div class="class-icon">&#127919;</div><div class="class-name">Targeted Therapy &amp; Biologics</div>
+            <div class="class-desc">Tyrosine kinase inhibitors (imatinib), monoclonal antibodies, VEGF &amp; CDK inhibitors.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-          <a class="class-card" href="pages/immunosuppressants.html" style="--class-color:#9b59b6;">
-            <div class="class-icon">&#128138;</div>
-            <div class="class-name">Immunosuppressants</div>
-            <div class="class-desc">Transplant rejection &amp; autoimmune disease.</div>
+          <a class="class-card" href="pages/hormonal-cancer-therapy.html" style="--class-color:#9b59b6;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Hormonal Cancer Therapy</div>
+            <div class="class-desc">Tamoxifen, aromatase inhibitors, GnRH agonists, anti-androgens for hormone-sensitive cancers.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
-
+          <a class="class-card" href="pages/immunosuppressants.html" style="--class-color:#7d3c98;">
+            <div class="class-icon">&#128138;</div><div class="class-name">Immunosuppressants</div>
+            <div class="class-desc">Calcineurin inhibitors, mTOR inhibitors, azathioprine, mycophenolate. Transplant &amp; autoimmune.</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
         </div>
       </section>
 
-      <!-- OPHTHALMOLOGY -->
+      <!--
+           OPHTHALMOLOGY
+       -->
       <section class="sys-panel" id="panel-ophtho">
         <div class="panel-header" style="--ph-color:#16a085;">
           <span class="ph-icon">&#128065;</span>
-          <div>
-            <div class="ph-name">Ophthalmology</div>
-            <div class="ph-desc">Drugs acting on the eye &amp; visual system</div>
-          </div>
+          <div><div class="ph-name">Ophthalmology</div><div class="ph-desc">Drugs acting on the eye &amp; visual system</div></div>
         </div>
         <div class="class-grid">
-
           <a class="class-card" href="pages/glaucoma.html" style="--class-color:#16a085;">
-            <div class="class-icon">&#128065;</div>
-            <div class="class-name">Glaucoma Drugs</div>
-            <div class="class-desc">Intraocular pressure reduction in glaucoma.</div>
+            <div class="class-icon">&#128065;</div><div class="class-name">Glaucoma Drugs</div>
+            <div class="class-desc">Beta blockers, prostaglandin analogs, alpha-2 agonists, CAIs. Reduce IOP.</div>
             <span class="badge coming-soon">Coming soon</span>
           </a>
+        </div>
+      </section>
 
+      <!--
+           TOXICOLOGY
+       -->
+      <section class="sys-panel" id="panel-tox">
+        <div class="panel-header" style="--ph-color:#e74c3c;">
+          <span class="ph-icon">&#9888;&#65039;</span>
+          <div><div class="ph-name">Toxicology</div><div class="ph-desc">Drug toxicities, adverse effects &amp; antidotes  high-yield for USMLE</div></div>
+        </div>
+        <div class="class-grid">
+          <a class="class-card" href="pages/drug-toxicities.html" style="--class-color:#e74c3c;">
+            <div class="class-icon">&#9888;&#65039;</div><div class="class-name">Drug Toxicities &amp; Antidotes</div>
+            <div class="class-desc">Classic drug toxicities, overdose presentations &amp; antidotes (naloxone, atropine, flumazenil, etc).</div>
+            <span class="badge coming-soon">Coming soon</span>
+          </a>
         </div>
       </section>
 
@@ -503,13 +486,12 @@
   </div>
 
   <footer class="hub-footer">
-    Drug Pronunciation Guide &mdash; Audio Reference &copy; 2026
+    Drug Pronunciation Guide &mdash; USMLE Step 1 Pharmacology &copy; 2026
   </footer>
 
   <script>
     var navItems = document.querySelectorAll('.sys-nav-item');
     var panels   = document.querySelectorAll('.sys-panel');
-
     navItems.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var target = btn.dataset.system;

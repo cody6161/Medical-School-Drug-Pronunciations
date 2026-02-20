@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anesthetics &mdash; Drug Pronunciation Guide</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <style>
+    :root { --class-color: #2c6e8a; }
+    .subcat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
+    .subcat-card { display: block; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s; border-top: 4px solid var(--sub-color, #2c6e8a); }
+    .subcat-card:hover { border-color: var(--sub-color, #2c6e8a); box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .subcat-icon { font-size: 2rem; margin-bottom: 8px; }
+    .subcat-name { font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+    .subcat-desc { font-size: 0.85rem; color: #555; line-height: 1.45; margin-bottom: 10px; }
+    .subcat-examples { font-size: 0.8rem; color: #777; font-style: italic; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-top: 10px; background: #eee; color: #555; }
+    .section-intro { color: #555; font-size: 0.95rem; margin: 0 0 8px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>&#128137; Anesthetics</h1>
+    <p>Drug Pronunciation Guide &mdash; Neurology &amp; Psychiatry</p>
+  </header>
+  <nav class="back-nav">
+    <a href="../index.html">&#8592; Back to All Drug Systems</a>
+  </nav>
+  <main>
+    <div class="page-header">
+      <h2>Anesthetic Agents</h2>
+      <p class="section-intro">Organized following the USMLE Step 1 framework. Select a category to browse its drugs.</p>
+    </div>
+    <div class="subcat-grid">
+
+      <a class="subcat-card" href="anesthetics.html" style="--sub-color:#4a90a4;">
+        <div class="subcat-icon">&#128137;</div>
+        <div class="subcat-name">General Anesthetics</div>
+        <div class="subcat-desc">Inhaled and IV agents producing reversible loss of consciousness for surgery.</div>
+        <div class="subcat-examples">Halothane, Isoflurane, N&#8322;O (inhaled); Propofol, Ketamine, Etomidate, Thiopental (IV)</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
+      <a class="subcat-card" href="local-anesthetics.html" style="--sub-color:#1a7fa8;">
+        <div class="subcat-icon">&#129657;</div>
+        <div class="subcat-name">Local Anesthetics</div>
+        <div class="subcat-desc">Reversible Na&#8314; channel blockade producing regional loss of sensation.</div>
+        <div class="subcat-examples">Lidocaine, Bupivacaine, Mepivacaine (amides); Procaine, Cocaine, Benzocaine (esters)</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
+      <a class="subcat-card" href="muscle-relaxants.html" style="--sub-color:#2c3e50;">
+        <div class="subcat-icon">&#128170;</div>
+        <div class="subcat-name">Neuromuscular Blocking Agents</div>
+        <div class="subcat-desc">Block neuromuscular junction to produce skeletal muscle paralysis for intubation and surgery.</div>
+        <div class="subcat-examples">Succinylcholine (depolarizing); Rocuronium, Vecuronium, Atracurium (non-depolarizing)</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
+    </div>
+  </main>
+  <footer>Drug Pronunciation Guide &mdash; USMLE Step 1 Pharmacology &copy; 2026</footer>
+</body>
+</html>
