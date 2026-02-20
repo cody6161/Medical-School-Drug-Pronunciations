@@ -13,6 +13,314 @@
   --border:        #dee2e6;
   --shadow:        0 2px 12px rgba(0, 0, 0, 0.08);
   --shadow-hover:  0 6px 24px rgba(0, 0, 0, 0.15);
+  --radius:        10px;
+  --transition:    0.18s ease;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ============================================================
+   HUB LAYOUT  (index.html only)
+   ============================================================ */
+body.hub-layout {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Compact top bar ── */
+.hub-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: white;
+  padding: 0.65rem 1.4rem;
+  flex-shrink: 0;
+}
+.hub-logo { font-size: 1.45rem; line-height: 1; }
+.hub-title { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.2px; }
+.hub-title-block { display: flex; flex-direction: column; gap: 0; }
+.hub-sub { font-size: 0.72rem; opacity: 0.78; }
+
+/* ── Two-column body ── */
+.hub-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ── LEFT sidebar: system list ── */
+.sys-nav {
+  width: 192px;
+  flex-shrink: 0;
+  background: #1e2a38;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0.6rem 0 1rem;
+}
+.sys-nav-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8898aa;
+  padding: 0 1rem 0.5rem;
+}
+.sys-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.52rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  border-left: 3px solid transparent;
+  transition: background var(--transition), border-color var(--transition);
+  color: #b0bec5;
+  position: relative;
+}
+.sys-nav-item:hover {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+.sys-nav-item.active {
+  background: rgba(255,255,255,0.10);
+  border-left-color: var(--sn-color, var(--primary));
+  color: #fff;
+}
+.sn-icon { font-size: 1.05rem; flex-shrink: 0; width: 1.4rem; text-align: center; }
+.sn-name { font-size: 0.8rem; font-weight: 500; flex: 1; line-height: 1.25; }
+.sn-count {
+  font-size: 0.65rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.12);
+  color: #cfd8dc;
+  border-radius: 20px;
+  padding: 0.1em 0.5em;
+  flex-shrink: 0;
+}
+.sys-nav-item.active .sn-count {
+  background: var(--sn-color, var(--primary));
+  color: #fff;
+}
+
+/* ── RIGHT main panel area ── */
+.hub-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.2rem 1.4rem 1.4rem;
+  background: var(--bg);
+}
+
+/* Each system panel — hidden by default, shown when active */
+.sys-panel        { display: none; }
+.sys-panel.active { display: block; }
+
+/* Panel header strip */
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-left: 5px solid var(--ph-color, var(--primary));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.ph-icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+.ph-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ph-color, var(--primary));
+  margin-bottom: 0.05rem;
+}
+.ph-desc { font-size: 0.76rem; color: var(--text-light); }
+
+/* ── Drug Class Card Grid ── */
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.85rem;
+}
+
+.class-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1rem 0.85rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-left: 4px solid var(--class-color, var(--primary));
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.class-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.class-card .class-icon { font-size: 1.45rem; line-height: 1; margin-bottom: 0.15rem; }
+.class-card .class-name { font-size: 0.9rem; font-weight: 600; line-height: 1.3; }
+.class-card .class-desc { font-size: 0.75rem; color: var(--text-light); flex: 1; line-height: 1.4; }
+
+.badge {
+  display: inline-block;
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.2em 0.6em;
+  border-radius: 20px;
+  margin-top: 0.4rem;
+  align-self: flex-start;
+  background: var(--class-color, var(--primary));
+}
+.badge.coming-soon { background: #adb5bd; }
+
+/* ── Thin footer ── */
+.hub-footer {
+  background: #1e2a38;
+  color: #8898aa;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   DRUG CLASS PAGES  (pages/*.html — not hub-layout)
+   ============================================================ */
+body:not(.hub-layout) {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: white;
+  padding: 2.2rem 2rem 1.8rem;
+  text-align: center;
+}
+.site-header h1 {
+  font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 0.35rem;
+}
+.site-header p { font-size: 0.95rem; opacity: 0.82; }
+
+.back-nav {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+}
+.back-nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color var(--transition);
+}
+.back-nav a:hover { color: var(--primary-dark); }
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  flex: 1;
+  width: 100%;
+}
+
+.page-header { margin-bottom: 1.5rem; }
+.page-header h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem; }
+.page-header p  { color: var(--text-light); font-size: 0.92rem; }
+
+/* Drug cards on class pages */
+.drug-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.drug-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1rem 0.9rem;
+  border-top: 4px solid var(--class-color, var(--primary));
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: box-shadow var(--transition);
+}
+.drug-card:hover { box-shadow: var(--shadow-hover); }
+.drug-card h3 { font-size: 1rem; font-weight: 600; }
+.drug-card audio { width: 100%; height: 36px; outline: none; border-radius: 6px; }
+
+/* ── Coming Soon State ── */
+.coming-soon-box {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-light);
+}
+.coming-soon-box .cs-icon { font-size: 3rem; margin-bottom: 1rem; }
+.coming-soon-box h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text); }
+.coming-soon-box p  { font-size: 0.9rem; line-height: 1.6; }
+
+/* ── Class page footer ── */
+body:not(.hub-layout) footer {
+  background: #1e2a38;
+  color: #8898aa;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.65rem 1rem;
+}
+
+/* ── Responsive breakpoints (class pages) ── */
+@media (max-width: 1400px) { .drug-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 1024px) { .drug-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px)  { .drug-grid { grid-template-columns: repeat(2, 1fr); } main { padding: 1.25rem 1rem; } }
+@media (max-width: 480px)  { .drug-grid { grid-template-columns: 1fr; } }
+
+/* ── Hub responsive: collapse sidebar on small screens ── */
+@media (max-width: 700px) {
+  body.hub-layout { overflow: auto; height: auto; }
+  .hub-body       { flex-direction: column; overflow: visible; }
+  .sys-nav        { width: 100%; flex-direction: row; flex-wrap: wrap; padding: 0.4rem; gap: 0.3rem; overflow-x: auto; }
+  .sys-nav-label  { display: none; }
+  .sys-nav-item   { width: auto; border-left: none; border-bottom: 2px solid transparent; padding: 0.4rem 0.65rem; border-radius: 6px; }
+  .sys-nav-item.active { border-bottom-color: var(--sn-color, var(--primary)); background: rgba(255,255,255,0.14); }
+  .sn-count       { display: none; }
+  .hub-main       { overflow: visible; padding: 0.9rem; }
+}
+
+:root {
+  --primary:       #1a6b8a;
+  --primary-dark:  #0f4d66;
+  --primary-light: #e8f4f8;
+  --text:          #2c3e50;
+  --text-light:    #6c757d;
+  --card-bg:       #ffffff;
+  --bg:            #f0f4f8;
+  --border:        #dee2e6;
+  --shadow:        0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover:  0 6px 24px rgba(0, 0, 0, 0.15);
   --radius:        12px;
   --transition:    0.2s ease;
 }
@@ -177,6 +485,61 @@ main {
 @media (max-width: 480px) {
   .drug-grid  { grid-template-columns: 1fr; }
   .class-grid { grid-template-columns: 1fr; }
+}
+
+/* ── System Sections (index) ── */
+.system-section {
+  margin-bottom: 3.5rem;
+}
+
+.system-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.4rem;
+  background: white;
+  border-left: 6px solid var(--system-color, var(--primary));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+.system-banner:hover {
+  background: #f8f8fb;
+}
+.sys-arrow {
+  margin-left: auto;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--system-color, var(--primary));
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+.system-section.is-open .sys-arrow {
+  transform: rotate(180deg);
+}
+/* Collapsed by default — grid hidden until section is opened */
+.system-section .class-grid {
+  display: none;
+}
+.system-section.is-open .class-grid {
+  display: grid;
+}
+.system-banner .sys-icon {
+  font-size: 1.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.system-banner .sys-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--system-color, var(--primary));
+  margin-bottom: 0.1rem;
+}
+.system-banner .sys-desc {
+  font-size: 0.81rem;
+  color: var(--text-light);
 }
 
 /* ── Coming Soon State ── */
