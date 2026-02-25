@@ -3,179 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antipsychotics — Drug Pronunciation Guide</title>
+  <title>Antipsychotics &mdash; Drug Pronunciation Guide</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <style> :root { --class-color: #1a6b8a; } </style>
+  <style>
+    :root { --class-color: #1a6b8a; }
+    .subcat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
+    .subcat-card { display: block; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s; border-top: 4px solid var(--sub-color, #1a6b8a); }
+    .subcat-card:hover { border-color: var(--sub-color, #1a6b8a); box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .subcat-icon { font-size: 2rem; margin-bottom: 8px; }
+    .subcat-name { font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+    .subcat-abbr { font-size: 0.85rem; font-weight: 600; color: var(--sub-color, #1a6b8a); margin-bottom: 6px; }
+    .subcat-desc { font-size: 0.85rem; color: #555; line-height: 1.45; margin-bottom: 10px; }
+    .subcat-examples { font-size: 0.8rem; color: #777; font-style: italic; margin-bottom: 6px; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-top: 6px; background: #eee; color: #555; }
+    .badge.active { background: #d4edda; color: #155724; }
+    .section-intro { color: #555; font-size: 0.95rem; margin: 0 0 8px; }
+  </style>
 </head>
 <body>
 
   <header class="site-header">
     <h1>&#129504; Antipsychotics</h1>
-    <p>Drug Pronunciation Guide</p>
+    <p>Drug Pronunciation Guide &mdash; Neurology &amp; Psychiatry</p>
   </header>
 
   <nav class="back-nav">
-    <a href="../index.html">&#8592; Back to All Drug Classes</a>
+    <a href="../index.html">&#8592; Back to All Drug Systems</a>
   </nav>
 
   <main>
     <div class="page-header">
-      <h2>Antipsychotic Drugs</h2>
-      <p>18 drugs &mdash; Click the play button on any card to hear the pronunciation.</p>
+      <h2>Antipsychotics by Generation</h2>
+      <p class="section-intro">Organized following the USMLE Step 1 framework. Select a category to browse its drugs.</p>
     </div>
 
-    <div class="drug-grid">
+    <div class="subcat-grid">
 
-      <div class="drug-card">
-        <h3>Amisulpride</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Amisulpride.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+      <a class="subcat-card" href="typical-antipsychotics.html" style="--sub-color:#922b21;">
+        <div class="subcat-icon">&#129504;</div>
+        <div class="subcat-name">Typical Antipsychotics</div>
+        <div class="subcat-abbr">First-Generation (FGAs)</div>
+        <div class="subcat-desc">D2 receptor antagonists. Classified by potency &mdash; high potency drugs carry greater EPS risk; low potency carry greater autonomic side effects.</div>
+        <div class="subcat-examples">High potency: Haloperidol, Fluphenazine &mdash; Low potency: Chlorpromazine, Thioridazine</div>
+        <span class="badge active">&#9654; 7 drugs available</span>
+      </a>
 
-      <div class="drug-card">
-        <h3>Aripiprazole</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Aripiprazole.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Asenapine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Asenapine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Chlorpromazine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Chlorpromazine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Clozapine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Clozapine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Fluphenazine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Fluphenazine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Haloperidol</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Haloperidol.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Iloperidone</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Iloperidone.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Lurasidone</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Lurasidone.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Olanzapine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Olanzapine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Paliperidone</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Paliperidone.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Perphenazine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Perphenazine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Pimozide</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Pimozide.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Quetiapine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Quetiapine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Risperidone</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Risperidone.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Thioridazine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Thioridazine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Trifluoperazine</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Trifluoperazine.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="drug-card">
-        <h3>Ziprasidone</h3>
-        <audio controls>
-          <source src="../assets/audio/antipsychotics/Ziprasidone.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+      <a class="subcat-card" href="atypical-antipsychotics.html" style="--sub-color:#1a6b8a;">
+        <div class="subcat-icon">&#129504;</div>
+        <div class="subcat-name">Atypical Antipsychotics</div>
+        <div class="subcat-abbr">Second-Generation (SGAs)</div>
+        <div class="subcat-desc">Block D2 and 5-HT2A receptors. Lower EPS risk but associated with metabolic syndrome. Clozapine reserved for treatment-resistant cases.</div>
+        <div class="subcat-examples">Clozapine, Risperidone, Olanzapine, Quetiapine, Aripiprazole, Ziprasidone &amp; more</div>
+        <span class="badge active">&#9654; 11 drugs available</span>
+      </a>
 
     </div>
   </main>
 
-  <footer>
-    Drug Pronunciation Guide &mdash; Audio Reference &copy; 2026
-  </footer>
-
+  <footer>Drug Pronunciation Guide &mdash; USMLE Step 1 Pharmacology &copy; 2026</footer>
 </body>
 </html>
