@@ -82,6 +82,7 @@ Tier 1  index.html (hub)
 | `pages/antibiotics.html` | Cell Wall, Protein Synthesis, DNA/RNA, Folate Inhibitors |
 | `pages/anesthesia.html` | General Anesthetics, Local Anesthetics, NMB Agents |
 | `pages/chemotherapy.html` | Alkylating, Antimetabolites, Antimicrotubule, Topoisomerase, Antitumor Abx |
+| `pages/antidepressants.html` | SSRIs ✅, SNRIs ✅, TCAs, MAOIs, Atypical Antidepressants |
 
 All other drug class pages go directly from `index.html` to the detail page (Tier 1  Tier 3).
 

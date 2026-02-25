@@ -1,43 +1,93 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antidepressants &amp; Mood Stabilizers — Drug Pronunciation Guide</title>
+  <title>Antidepressants &mdash; Drug Pronunciation Guide</title>
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  <style> :root { --class-color: #e67e22; } </style>
+  <style>
+    :root { --class-color: #e67e22; }
+    .subcat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
+    .subcat-card { display: block; background: #fff; border: 2px solid #e0e0e0; border-radius: 10px; padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s; border-top: 4px solid var(--sub-color, #e67e22); }
+    .subcat-card:hover { border-color: var(--sub-color, #e67e22); box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+    .subcat-card.disabled { opacity: 0.6; pointer-events: none; cursor: default; }
+    .subcat-icon { font-size: 2rem; margin-bottom: 8px; }
+    .subcat-name { font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; }
+    .subcat-abbr { font-size: 0.85rem; font-weight: 600; color: var(--sub-color, #e67e22); margin-bottom: 6px; }
+    .subcat-desc { font-size: 0.85rem; color: #555; line-height: 1.45; margin-bottom: 10px; }
+    .subcat-examples { font-size: 0.8rem; color: #777; font-style: italic; margin-bottom: 6px; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-top: 6px; background: #eee; color: #555; }
+    .badge.active { background: #d4edda; color: #155724; }
+    .section-intro { color: #555; font-size: 0.95rem; margin: 0 0 8px; }
+  </style>
 </head>
 <body>
 
   <header class="site-header">
-    <h1>&#127774; Antidepressants &amp; Mood Stabilizers</h1>
-    <p>Drug Pronunciation Guide</p>
+    <h1>&#127774; Antidepressants</h1>
+    <p>Drug Pronunciation Guide &mdash; Neurology &amp; Psychiatry</p>
   </header>
 
   <nav class="back-nav">
-    <a href="../index.html">&#8592; Back to All Drug Classes</a>
+    <a href="../index.html">&#8592; Back to All Drug Systems</a>
   </nav>
 
   <main>
     <div class="page-header">
-      <h2>Antidepressant &amp; Mood Stabilizer Drugs</h2>
-      <p>Audio files for this category have not been added yet.</p>
+      <h2>Antidepressants by Class</h2>
+      <p class="section-intro">Organized following the USMLE Step 1 framework. Select a class to browse its drugs.</p>
     </div>
 
-    <div class="coming-soon-box">
-      <div class="cs-icon">&#127774;</div>
-      <h3>Audio Files Coming Soon</h3>
-      <p>
-        Add MP3 files to <code>assets/audio/antidepressants/</code>,<br />
-        then add drug cards to this page following the pattern in
-        <code>pages/antipsychotics.html</code>.
-      </p>
+    <div class="subcat-grid">
+
+      <a class="subcat-card" href="selective-serotonin-reuptake-inhibitors.html" style="--sub-color:#2980b9;">
+        <div class="subcat-icon">&#127774;</div>
+        <div class="subcat-name">Selective Serotonin Reuptake Inhibitors</div>
+        <div class="subcat-abbr">SSRIs</div>
+        <div class="subcat-desc">First-line antidepressants. Block serotonin reuptake transporter (SERT).</div>
+        <div class="subcat-examples">Fluoxetine, Sertraline, Escitalopram, Citalopram, Paroxetine, Fluvoxamine</div>
+        <span class="badge active">&#9654; 6 drugs available</span>
+      </a>
+
+      <a class="subcat-card" href="serotonin-norepinephrine-reuptake-inhibitors.html" style="--sub-color:#8e44ad;">
+        <div class="subcat-icon">&#127774;</div>
+        <div class="subcat-name">Serotonin-Norepinephrine Reuptake Inhibitors</div>
+        <div class="subcat-abbr">SNRIs</div>
+        <div class="subcat-desc">Block both SERT and NET. Used for depression, anxiety, and pain syndromes.</div>
+        <div class="subcat-examples">Venlafaxine, Duloxetine, Desvenlafaxine, Levomilnacipran, Milnacipran</div>
+        <span class="badge active">&#9654; 5 drugs available</span>
+      </a>
+
+      <a class="subcat-card" href="tricyclics.html" style="--sub-color:#c0392b;">
+        <div class="subcat-icon">&#127774;</div>
+        <div class="subcat-name">Tricyclic Antidepressants</div>
+        <div class="subcat-abbr">TCAs</div>
+        <div class="subcat-desc">Block SERT, NET and muscarinic/histamine receptors. High toxicity in overdose.</div>
+        <div class="subcat-examples">Amitriptyline, Nortriptyline, Imipramine, Clomipramine, Doxepin</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
+      <a class="subcat-card" href="maois.html" style="--sub-color:#8e44ad;">
+        <div class="subcat-icon">&#127774;</div>
+        <div class="subcat-name">Monoamine Oxidase Inhibitors</div>
+        <div class="subcat-abbr">MAOIs</div>
+        <div class="subcat-desc">Inhibit MAO-A/MAO-B, increasing monoamine levels. Significant dietary interactions.</div>
+        <div class="subcat-examples">Phenelzine, Tranylcypromine, Isocarboxazid, Selegiline (patch)</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
+      <a class="subcat-card" href="atypical-antidepressants.html" style="--sub-color:#e67e22;">
+        <div class="subcat-icon">&#127774;</div>
+        <div class="subcat-name">Atypical Antidepressants</div>
+        <div class="subcat-abbr"></div>
+        <div class="subcat-desc">Varied mechanisms not fitting the other classes. Used for depression, smoking cessation, and insomnia.</div>
+        <div class="subcat-examples">Bupropion, Mirtazapine, Trazodone, Vilazodone, Vortioxetine</div>
+        <span class="badge">Coming soon</span>
+      </a>
+
     </div>
   </main>
 
-  <footer>
-    Drug Pronunciation Guide &mdash; Audio Reference &copy; 2026
-  </footer>
-
+  <footer>Drug Pronunciation Guide &mdash; USMLE Step 1 Pharmacology &copy; 2026</footer>
 </body>
 </html>

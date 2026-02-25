@@ -182,9 +182,72 @@
       "name": "Antidepressants",
       "system": "neuro",
       "color": "#e67e22",
-      "status": "coming-soon",
+      "status": "active",
       "page": "pages/antidepressants.html",
       "audioDir": "assets/audio/antidepressants",
+      "drugs": []
+    },
+    {
+      "id": "selective-serotonin-reuptake-inhibitors",
+      "name": "Selective Serotonin Reuptake Inhibitors (SSRIs)",
+      "system": "neuro",
+      "color": "#2980b9",
+      "status": "active",
+      "page": "pages/selective-serotonin-reuptake-inhibitors.html",
+      "audioDir": "assets/audio/selective-serotonin-reuptake-inhibitors",
+      "drugs": [
+        { "name": "Citalopram", "file": "Citalopram.mp3" },
+        { "name": "Escitalopram", "file": "Escitalopram.mp3" },
+        { "name": "Fluoxetine", "file": "Fluoxetine.mp3" },
+        { "name": "Fluvoxamine", "file": "Fluvoxamine.mp3" },
+        { "name": "Paroxetine", "file": "Paroxetine.mp3" },
+        { "name": "Sertraline", "file": "Sertraline.mp3" }
+      ]
+    },
+    {
+      "id": "serotonin-norepinephrine-reuptake-inhibitors",
+      "name": "Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs)",
+      "system": "neuro",
+      "color": "#8e44ad",
+      "status": "active",
+      "page": "pages/serotonin-norepinephrine-reuptake-inhibitors.html",
+      "audioDir": "assets/audio/serotonin-norepinephrine-reuptake-inhibitors",
+      "drugs": [
+        { "name": "Desvenlafaxine", "file": "Desvenlafaxine.mp3" },
+        { "name": "Duloxetine", "file": "Duloxetine.mp3" },
+        { "name": "Levomilnacipran", "file": "Levomilnacipran.mp3" },
+        { "name": "Milnacipran", "file": "Milnacipran.mp3" },
+        { "name": "Venlafaxine", "file": "Venlafaxine.mp3" }
+      ]
+    },
+    {
+      "id": "tricyclics",
+      "name": "Tricyclic Antidepressants (TCAs)",
+      "system": "neuro",
+      "color": "#c0392b",
+      "status": "coming-soon",
+      "page": "pages/tricyclics.html",
+      "audioDir": "assets/audio/tricyclics",
+      "drugs": []
+    },
+    {
+      "id": "maois",
+      "name": "Monoamine Oxidase Inhibitors (MAOIs)",
+      "system": "neuro",
+      "color": "#8e44ad",
+      "status": "coming-soon",
+      "page": "pages/maois.html",
+      "audioDir": "assets/audio/maois",
+      "drugs": []
+    },
+    {
+      "id": "atypical-antidepressants",
+      "name": "Atypical Antidepressants",
+      "system": "neuro",
+      "color": "#e67e22",
+      "status": "coming-soon",
+      "page": "pages/atypical-antidepressants.html",
+      "audioDir": "assets/audio/atypical-antidepressants",
       "drugs": []
     },
     {

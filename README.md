@@ -51,7 +51,12 @@ Organized to follow the **USMLE Step 1** pharmacology curriculum. All 63 drug cl
 | Parkinson's Drugs | 🔜 Coming soon |
 | Alzheimer's & Dementia Drugs | 🔜 Coming soon |
 | Migraine Drugs | 🔜 Coming soon |
-| Antidepressants | 🔜 Coming soon |
+| **Antidepressants** *(hub → 5 subcategories)* | ✅ 11 drugs available |
+| &nbsp;&nbsp;↳ Selective Serotonin Reuptake Inhibitors (SSRIs) | ✅ Available — 6 drugs |
+| &nbsp;&nbsp;↳ Serotonin-Norepinephrine Reuptake Inhibitors (SNRIs) | ✅ Available — 5 drugs |
+| &nbsp;&nbsp;↳ Tricyclic Antidepressants (TCAs) | 🔜 Coming soon |
+| &nbsp;&nbsp;↳ Monoamine Oxidase Inhibitors (MAOIs) | 🔜 Coming soon |
+| &nbsp;&nbsp;↳ Atypical Antidepressants | 🔜 Coming soon |
 | Mood Stabilizers | 🔜 Coming soon |
 | Anxiolytics | 🔜 Coming soon |
 | Sedative-Hypnotics | 🔜 Coming soon |
